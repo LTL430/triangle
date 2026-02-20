@@ -13,13 +13,14 @@ public class Main {
 		double b = sc.nextDouble();
 		System.out.print("please input c :");
 		double c = sc.nextDouble();
-		if ((a==90 || b==90 || c==90) && a+b+c==180) {
-			System.out.print("recteangle");
-		}
-		if (a+b+c==180 && a!=90 && b!=90 && c!=90) {
-			System.out.print("triangle");
-		}
-		if (a+b+c!=180) {
+		
+		if (a+b+c==180) {
+			if (a==90 || b==90 || c==90) {
+				System.out.print("rectangle");
+			} else {
+				System.out.print("trangle");
+			}
+		} else {
 			System.out.print("error");
 		}
 		
