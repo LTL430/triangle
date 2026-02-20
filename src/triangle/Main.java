@@ -13,13 +13,24 @@ public class Main {
 		double b=sc.nextDouble();
 		System.out.print("please input c :");
 		double c=sc.nextDouble();
-		if (a+b>c && b+c>a && c+a>b) {
-			System.out.print("yes");
-		} else {
-			System.out.print("no");
+	
+		if (a+b<=c) {
+			System.out.print("no1");
+			return;
+			
 		}
-	
-	
+		if (b+c<=a) {
+			System.out.print("no2");
+			return;
+			
+		}
+		if (c+a<=b) {
+			System.out.print("no3");
+			return;
+			
+		}
+		System.out.print("yes");
+		
 	}
 
 }
